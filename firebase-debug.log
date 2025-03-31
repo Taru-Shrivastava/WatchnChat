@@ -1,0 +1,44 @@
+[debug] [2025-02-28T18:40:22.253Z] ----------------------------------------------------------------------
+[debug] [2025-02-28T18:40:22.255Z] Command:       /usr/local/bin/node /usr/local/bin/firebase hosting:sites:create localhost
+[debug] [2025-02-28T18:40:22.255Z] CLI Version:   13.32.0
+[debug] [2025-02-28T18:40:22.255Z] Platform:      linux
+[debug] [2025-02-28T18:40:22.255Z] Node Version:  v22.11.0
+[debug] [2025-02-28T18:40:22.256Z] Time:          Sat Mar 01 2025 00:10:22 GMT+0530 (India Standard Time)
+[debug] [2025-02-28T18:40:22.256Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-02-28T18:40:22.607Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-28T18:40:22.607Z] > authorizing via signed-in user (snehagpt1810@gmail.com)
+[debug] [2025-02-28T18:40:22.607Z] [iam] checking project watchnchat-0818 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-02-28T18:40:22.608Z] Checked if tokens are valid: true, expires at: 1740769982347
+[debug] [2025-02-28T18:40:22.609Z] Checked if tokens are valid: true, expires at: 1740769982347
+[debug] [2025-02-28T18:40:22.610Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/watchnchat-0818:testIamPermissions [none]
+[debug] [2025-02-28T18:40:22.610Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/watchnchat-0818:testIamPermissions x-goog-quota-user=projects/watchnchat-0818
+[debug] [2025-02-28T18:40:22.610Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/watchnchat-0818:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-02-28T18:40:24.394Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/watchnchat-0818:testIamPermissions 200
+[debug] [2025-02-28T18:40:24.394Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/watchnchat-0818:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-02-28T18:40:24.396Z] Checked if tokens are valid: true, expires at: 1740769982347
+[debug] [2025-02-28T18:40:24.397Z] Checked if tokens are valid: true, expires at: 1740769982347
+[debug] [2025-02-28T18:40:24.397Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/watchnchat-0818 [none]
+[debug] [2025-02-28T18:40:24.744Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/watchnchat-0818 200
+[debug] [2025-02-28T18:40:24.744Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/watchnchat-0818 {"projectNumber":"152150590785","projectId":"watchnchat-0818","lifecycleState":"ACTIVE","name":"WatchnChat","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-02-27T18:54:32.551859Z"}
+[debug] [2025-02-28T18:40:24.745Z] Checked if tokens are valid: true, expires at: 1740769982347
+[debug] [2025-02-28T18:40:24.745Z] Checked if tokens are valid: true, expires at: 1740769982347
+[debug] [2025-02-28T18:40:24.746Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/152150590785/sites siteId=localhost
+[debug] [2025-02-28T18:40:24.746Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/152150590785/sites {"appId":""}
+[debug] [2025-02-28T18:40:26.142Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/152150590785/sites 400
+[debug] [2025-02-28T18:40:26.143Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/152150590785/sites {"error":{"code":400,"message":"Invalid name: `localhost` is reserved by another project; try something like `localhost-10057` instead","status":"FAILED_PRECONDITION"}}
+[warn] ⚠  Invalid name: `localhost` is reserved by another project; try something like `localhost-10057` instead 
+[debug] [2025-02-28T18:41:09.748Z] Checked if tokens are valid: true, expires at: 1740769982347
+[debug] [2025-02-28T18:41:09.749Z] Checked if tokens are valid: true, expires at: 1740769982347
+[debug] [2025-02-28T18:41:09.750Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/152150590785/sites siteId=+++++++++++++++++++++++127.0.0.1%3A5501
+[debug] [2025-02-28T18:41:09.750Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/152150590785/sites {"appId":""}
+[debug] [2025-02-28T18:41:10.820Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/152150590785/sites 400
+[debug] [2025-02-28T18:41:10.820Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/152150590785/sites {"error":{"code":400,"message":"Invalid name: `                       127.0.0.1:5501` is invalid; try something like `127-0-0-1-5501` instead","status":"INVALID_ARGUMENT"}}
+[warn] ⚠  Invalid name: `                       127.0.0.1:5501` is invalid; try something like `127-0-0-1-5501` instead 
+[debug] [2025-02-28T18:41:30.583Z] Checked if tokens are valid: true, expires at: 1740769982347
+[debug] [2025-02-28T18:41:30.584Z] Checked if tokens are valid: true, expires at: 1740769982347
+[debug] [2025-02-28T18:41:30.586Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/152150590785/sites siteId=++++++++++++++++++++++http%3A%2F%2F127.0.0.1%3A5501%2Findex.html
+[debug] [2025-02-28T18:41:30.587Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/152150590785/sites {"appId":""}
+[debug] [2025-02-28T18:41:32.980Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/152150590785/sites 400
+[debug] [2025-02-28T18:41:32.981Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/152150590785/sites {"error":{"code":400,"message":"Site name `projects/152150590785/sites/                      http:/127.0.0.1:5501/index.html` is invalid, must be of form `projects/*/sites/*` or `sites/*`.","status":"INVALID_ARGUMENT"}}
+[warn] ⚠  Request to https://firebasehosting.googleapis.com/v1beta1/projects/152150590785/sites?siteId=++++++++++++++++++++++http%3A%2F%2F127.0.0.1%3A5501%2Findex.html had HTTP Error: 400, Site name `projects/152150590785/sites/                      http:/127.0.0.1:5501/index.html` is invalid, must be of form `projects/*/sites/*` or `sites/*`. 
