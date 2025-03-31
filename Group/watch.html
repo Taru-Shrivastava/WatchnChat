@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Together</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="watch.css">
+    
+    <!-- JavaScript -->
+    <script src="https://www.youtube.com/iframe_api" defer></script>
+    <!-- <script type="module" src="watch.js" defer></script> -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="/index.html">
+                <img src="/Image/WatchnChat.png" alt="">
+            </a>
+            <h2>WatchnChat</h2>
+
+        </div>
+    </nav>
+
+    <h1>Watch Together</h1>
+    <h2 id="group-name"><span id="group-title"></span></h2>
+
+
+    <div class="container">
+        <div class="video-container">
+            <iframe id="videoPlayer" frameborder="0" allowfullscreen></iframe>
+            <div class="video-commands">
+                <input type="text" id="video-url" placeholder="Paste YouTube Video URL">
+                <button id="loadVideoBtn" onclick="updateVideo()">Load Video</button>
+            </div>
+        </div>
+
+        <div class="chat-container">
+            <h2>Chat</h2>
+            <div id="chat-box"></div>
+            <div class="msg-commands">
+                <input type="text" id="message" placeholder="Type a message">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recommended Videos -->
+    <div class="recommended-section">
+        <h2>Recommended Videos</h2>
+        <div id="recommended-videos"></div>
+    </div> 
+
+    <iframe id="videoPlayer" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+
+    <script type="module" src="watch.js" defer></script>
+
+</body>
+</html>
